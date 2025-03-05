@@ -1,16 +1,10 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.11">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Page-1" id="S8FyIIHlPzOr1TNchbIG">
-    <mxGraphModel dx="2092" dy="1885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1707" dy="1641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-1" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
-          <mxGeometry x="30" y="300" width="90" height="57.5" as="geometry" />
-        </mxCell>
-        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-2" value="Client&lt;div&gt;Web Application&lt;/div&gt;&lt;div&gt;Mobile&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="o_sa3MoW5a0CHOQ6UXBQ-1" vertex="1">
-          <mxGeometry x="-10" y="-2.5" width="110" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o_sa3MoW5a0CHOQ6UXBQ-2" edge="1">
+        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="zHQjATazilqqQVOIC0nD-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="215" y="327.5" as="targetPoint" />
           </mxGeometry>
@@ -21,11 +15,11 @@
         <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-6" value="Load Balancer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="215" y="267.5" width="65" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-7" value="&lt;b&gt;&lt;i&gt;Functional Requirements:&lt;/i&gt;&lt;/b&gt;&lt;div&gt;- Create an account and login&lt;/div&gt;&lt;div&gt;- Create, edit, delete tweets (basics CRUD operations)&lt;/div&gt;&lt;div&gt;- Follow other users&lt;/div&gt;&lt;div&gt;- View the timeline of the tweets from following&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Like, reply &amp;amp; retweet&lt;/div&gt;&lt;div&gt;- Search for tweets&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
-          <mxGeometry x="-420" width="310" height="110" as="geometry" />
+        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-7" value="&lt;b&gt;&lt;i&gt;Functional Requirements:&lt;/i&gt;&lt;/b&gt;&lt;div&gt;- Create an account and login&lt;/div&gt;&lt;div&gt;- Create, edit, delete tweets (basics CRUD operations)&lt;/div&gt;&lt;div&gt;- Follow other users&lt;/div&gt;&lt;div&gt;- View the timeline of the tweets from following&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Like, reply &amp;amp; retweet&lt;/div&gt;&lt;div&gt;- Search for tweets&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="-670" y="-230" width="310" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-8" value="&lt;b&gt;Non-Functional Requirements:&lt;/b&gt;&lt;div&gt;- &lt;b&gt;Scalability&lt;/b&gt;: scale up to 100+ million users&lt;/div&gt;&lt;div&gt;- Handle a high volume of tweets, likes &amp;amp; retweets&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Reliability&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: the system should be up (high-available) 99,999% of time&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;- &lt;b&gt;Security&lt;/b&gt;: Ensure security &amp;amp; privacy of user data&lt;/div&gt;&lt;div&gt;&lt;div&gt;- &lt;b&gt;High Performance&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Low Latency&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
-          <mxGeometry x="-470" y="130" width="400" height="110" as="geometry" />
+        <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-8" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Non-Functional Requirements:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- &lt;b&gt;Scalability&lt;/b&gt;: scale up to 100+ million users&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Handle a high volume of tweets, likes &amp;amp; retweets&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Reliability&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: the system should be up (high-available) 99,999% of time&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- &lt;b&gt;Security&lt;/b&gt;: Ensure security &amp;amp; privacy of user data&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- &lt;b&gt;High Performance&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Low Latency&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="-670" y="-100" width="400" height="110" as="geometry" />
         </mxCell>
         <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-9" value="&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;imageWidth=55;imageHeight=10;perimeter=none;" parent="1" vertex="1">
           <mxGeometry x="225" y="445" width="20" height="30" as="geometry" />
@@ -57,13 +51,13 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="510" y="-80" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="840" y="-180" />
+              <mxPoint x="850" y="-180" />
               <mxPoint x="65" y="-180" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-21" value="Amazon S3&lt;div&gt;(blob storage)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
-          <mxGeometry x="810" y="20" width="60" height="80" as="geometry" />
+          <mxGeometry x="810" y="20" width="80" height="90" as="geometry" />
         </mxCell>
         <mxCell id="o_sa3MoW5a0CHOQ6UXBQ-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="o_sa3MoW5a0CHOQ6UXBQ-22" target="o_sa3MoW5a0CHOQ6UXBQ-19" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -260,13 +254,31 @@
         <mxCell id="417g46iVcn9-H5saOMee-31" value="Auth &amp;amp;&amp;nbsp;&lt;div&gt;IAM&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="540" y="735" width="70" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="417g46iVcn9-H5saOMee-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" parent="1" source="o_sa3MoW5a0CHOQ6UXBQ-33" target="o_sa3MoW5a0CHOQ6UXBQ-2" edge="1">
+        <mxCell id="417g46iVcn9-H5saOMee-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="o_sa3MoW5a0CHOQ6UXBQ-33" target="zHQjATazilqqQVOIC0nD-1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="70" y="250" as="targetPoint" />
+            <mxPoint x="100" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="417g46iVcn9-H5saOMee-35" value="&lt;b&gt;Security:&lt;/b&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Authentication &amp;amp; Authorization&lt;/li&gt;&lt;li&gt;&amp;nbsp;Encryption&lt;/li&gt;&lt;li&gt;Rate Limiting&lt;br&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;It&#39;s also crucial to prevent DDoS attacks. To achieve this, we implement IP rate limiting within our API Gateway.&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;This ensures that requests from a single IP address are restricted to a specified number within a given time frame, preventing any single user or bot from overwhelming our system&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Input Validation on a client.&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
           <mxGeometry x="645" y="-350" width="1010" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="zHQjATazilqqQVOIC0nD-1" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Client&lt;/span&gt;&lt;div style=&quot;text-wrap-mode: nowrap;&quot;&gt;Web Application&lt;/div&gt;&lt;div style=&quot;text-wrap-mode: nowrap;&quot;&gt;Mobile&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5" y="297.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zHQjATazilqqQVOIC0nD-2" value="1. Requirements" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zHQjATazilqqQVOIC0nD-3" value="2. Core Entities" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zHQjATazilqqQVOIC0nD-4" value="- User&lt;div&gt;&lt;div&gt;- Tweet&lt;/div&gt;&lt;div&gt;- CreationDate&lt;/div&gt;&lt;div&gt;- Likes&lt;/div&gt;&lt;div&gt;- Replies&lt;/div&gt;&lt;div&gt;- Retweet&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="110" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="zHQjATazilqqQVOIC0nD-6" value="3. API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zHQjATazilqqQVOIC0nD-7" value="CRUD Operations for tweets&lt;div&gt;create: POST /users/{userId}/tweets&lt;/div&gt;&lt;div&gt;read: GET /users/{userId}/tweets - all tweets for userId&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;GET&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;/tweets/{tweetId} - single tweet&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;update? (if we allow tweet updates): PATCH /tweets/{tweetId}&lt;/div&gt;&lt;div&gt;delete: DELETE /tweets/{tweetId}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="310" width="350" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
