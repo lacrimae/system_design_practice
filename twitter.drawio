@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Page-1" id="S8FyIIHlPzOr1TNchbIG">
-    <mxGraphModel dx="1707" dy="1641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1885" dy="1754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -271,8 +271,8 @@
         <mxCell id="zHQjATazilqqQVOIC0nD-3" value="2. Core Entities" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-670" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zHQjATazilqqQVOIC0nD-4" value="- User&lt;div&gt;&lt;div&gt;- Tweet&lt;/div&gt;&lt;div&gt;- CreationDate&lt;/div&gt;&lt;div&gt;- Likes&lt;/div&gt;&lt;div&gt;- Replies&lt;/div&gt;&lt;div&gt;- Retweet&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-670" y="110" width="100" height="100" as="geometry" />
+        <mxCell id="zHQjATazilqqQVOIC0nD-4" value="- User&lt;div&gt;&lt;div&gt;- Tweet&lt;/div&gt;&lt;div&gt;- Likes&lt;/div&gt;&lt;div&gt;- Reply&lt;/div&gt;&lt;div&gt;- Retweet&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="115" width="70" height="90" as="geometry" />
         </mxCell>
         <mxCell id="zHQjATazilqqQVOIC0nD-6" value="3. API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-670" y="230" width="120" height="60" as="geometry" />
