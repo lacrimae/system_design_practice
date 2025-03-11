@@ -1,9 +1,30 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Page-1" id="1U2h8nbjLLuCjXS5kLmN">
-    <mxGraphModel>
+    <mxGraphModel dx="1678" dy="1623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-1" value="Functional Requirements&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Users should be able to search for businesses by name, location (lat/long), and category&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Users should be able to view businesses (and their reviews)&lt;/div&gt;&lt;div&gt;- Users should be able to leave reviews on businesses (mandatory 1-5 star rating and optional text)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="10" width="550" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-2" value="&lt;div&gt;What is Yelp?&lt;/div&gt;&lt;div&gt;&amp;gt; Yelp is an online platform that allows users to search for and review local businesses, restaurants, and services.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="-110" width="630" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-4" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="-40" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-5" value="Non-Functional Requirements&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- The service should support 100M daily users (DAU) and 10M businesses&lt;/div&gt;&lt;div&gt;- Low latency for search/read operations (&amp;lt;500ms)&lt;/div&gt;&lt;div&gt;- Prioritize High Availability over Consistency (eventual consistency is fine)&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Optional:&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Security: the system should protect from bots/spam&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="110" width="420" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-6" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="268" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-7" value="- Business&lt;div&gt;- Review&lt;/div&gt;&lt;div&gt;- User&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="298" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-8" value="3. API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
