@@ -1,32 +1,82 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="Page-1" id="1U2h8nbjLLuCjXS5kLmN">
-    <mxGraphModel dx="2403" dy="2081" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1885" dy="1754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-1" value="Functional Requirements&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Users should be able to search for businesses by name, location (lat/long), and category&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Users should be able to view businesses (and their reviews)&lt;/div&gt;&lt;div&gt;- Users should be able to leave reviews on businesses (mandatory 1-5 star rating and optional text)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="-35" y="10" width="550" height="90" as="geometry" />
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-1" value="Functional Requirements&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Users should be able to search for businesses by name, location (lat/long), and category&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Users should be able to view businesses &amp;amp; reviews&lt;/div&gt;&lt;div&gt;- Users should be able to leave reviews on businesses (mandatory 1-5 star rating and optional text)&lt;/div&gt;&lt;div&gt;- Users should be able to create a business page&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="-35" y="5" width="550" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-2" value="&lt;div&gt;What is Yelp?&lt;/div&gt;&lt;div&gt;&amp;gt; Yelp is an online platform that allows users to search for and review local businesses, restaurants, and services.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-2" value="&lt;div&gt;What is Yelp?&lt;/div&gt;&lt;div&gt;&amp;gt; Yelp is an online platform that allows users to search for and review local businesses, restaurants, and services.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-35" y="-110" width="630" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-4" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-4" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="-35" y="-40" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-5" value="Non-Functional Requirements&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- The service should support 100M daily users (DAU) and 10M businesses&lt;/div&gt;&lt;div&gt;- Low latency for search/read operations (&amp;lt;500ms)&lt;/div&gt;&lt;div&gt;- Prioritize High Availability over Consistency (eventual consistency is fine)&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Optional:&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Security: the system should protect from bots/spam&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-5" value="Non-Functional Requirements&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- The service should support 100M daily users (DAU) and 10M businesses&lt;/div&gt;&lt;div&gt;- Low latency for search/read operations (&amp;lt;500ms)&lt;/div&gt;&lt;div&gt;- Prioritize High Availability over Consistency (eventual consistency is fine)&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Optional:&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Security: the system should protect from bots/spam&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
           <mxGeometry x="-35" y="110" width="420" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-6" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-6" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="-35" y="268" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-7" value="- Business&lt;div&gt;- Review&lt;/div&gt;&lt;div&gt;- User&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-7" value="- Business&lt;div&gt;- Review&lt;/div&gt;&lt;div&gt;- User&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-35" y="298" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-8" value="3. API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-8" value="3. API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="-35" y="370" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xYoCxOlnZBXiPIidWAu6-10" value="search/read for review, business&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. search for businesses&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /businesses?query&amp;amp;location&amp;amp;category&amp;amp;page -&amp;gt; Business[]&lt;/div&gt;&lt;div&gt;GET /businesses/{businessId} -&amp;gt; Business (business details, location, info, etc)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. search for review&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET / businesses/{businessId}/reviews?query&amp;amp;rating -&amp;gt; Review[]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;3. leave a review POST /businesses/{businessId}/reviews&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;requestBody:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;userId: uuid&lt;/div&gt;&lt;div&gt;rating: number&lt;/div&gt;&lt;div&gt;text?: string&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-35" y="410" width="440" height="300" as="geometry" />
+        <mxCell id="xYoCxOlnZBXiPIidWAu6-10" value="search/read for review, business&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. search for businesses&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /businesses?query&amp;amp;location&amp;amp;category&amp;amp;page -&amp;gt; Business[]&lt;/div&gt;&lt;div&gt;GET /businesses/{businessId} -&amp;gt; Business (business details, location, info, etc)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. add a business&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /businesses&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;requestBody:&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;userId: uuid&lt;/div&gt;&lt;div&gt;name: text&lt;/div&gt;&lt;div&gt;category?: string/enum (restaurant, shop, bakery)&lt;/div&gt;&lt;div&gt;description: text&lt;/div&gt;&lt;div&gt;location: lat/long&lt;/div&gt;&lt;div&gt;phone: number&lt;/div&gt;&lt;div&gt;email: string&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. search for reviews&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET / businesses/{businessId}/reviews?query&amp;amp;rating -&amp;gt; Review[]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;4. leave a review POST /businesses/{businessId}/reviews&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;requestBody:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;userId: uuid&lt;/div&gt;&lt;div&gt;rating: number&lt;/div&gt;&lt;div&gt;text?: string&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-35" y="465" width="440" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-1" value="4. High-Level Design" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="640" y="-40" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0JSaVTqZtGKCwrpnLoXk-2" target="0JSaVTqZtGKCwrpnLoXk-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-2" value="Client&lt;div&gt;(Web and Mobile)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0JSaVTqZtGKCwrpnLoXk-3" target="0JSaVTqZtGKCwrpnLoXk-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="-29.999999999999773" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-12" value="&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0JSaVTqZtGKCwrpnLoXk-11">
+          <mxGeometry x="-0.322" relative="1" as="geometry">
+            <mxPoint x="54" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-19" value="write operations&lt;div&gt;POST /businesses&lt;br&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;&amp;nbsp;POST /businesses/{businessId}/reviews&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0JSaVTqZtGKCwrpnLoXk-11">
+          <mxGeometry x="0.0638" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-3" value="Business Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-5" value="Oracle/&lt;br&gt;PostgreSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="-145" width="90" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.458;entryY=1.049;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="0JSaVTqZtGKCwrpnLoXk-3" target="0JSaVTqZtGKCwrpnLoXk-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-10" value="read operations&lt;br&gt;&lt;div&gt;GET /businesses?query&amp;amp;location&amp;amp;category&amp;amp;page -&amp;gt; Business[]&lt;/div&gt;&lt;div&gt;GET /businesses/{businessId} -&amp;gt; Business (business details, location, info, etc)&lt;/div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;GET / businesses/{businessId}/reviews?query&amp;amp;rating -&amp;gt; Review[]&lt;/span&gt;&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0JSaVTqZtGKCwrpnLoXk-6">
+          <mxGeometry x="0.128" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-7" value="Redis/&lt;div&gt;MemCached&lt;br&gt;(LRU)&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1051" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0JSaVTqZtGKCwrpnLoXk-7" target="0JSaVTqZtGKCwrpnLoXk-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0JSaVTqZtGKCwrpnLoXk-14" target="0JSaVTqZtGKCwrpnLoXk-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0JSaVTqZtGKCwrpnLoXk-14" value="API Gateway:&lt;div&gt;- Authentication&lt;br&gt;- Rate Limiting&lt;br&gt;- Routing&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="15" width="90" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
