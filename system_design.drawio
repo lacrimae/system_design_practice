@@ -1,25 +1,25 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.1">
-  <diagram name="Page-1" id="Ptf_d_CCf5I-wh_goVZh">
-    <mxGraphModel dx="2580" dy="2128" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram name="youtube" id="Ptf_d_CCf5I-wh_goVZh">
+    <mxGraphModel dx="2442" dy="1985" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PlQ0SCh3now162u1fZZV-1" value="Functional Requirements:&lt;div&gt;&lt;div&gt;- Users should be able to upload a video&lt;/div&gt;&lt;div&gt;- Users should be able to interact with a video: watch/like/comment&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="PlQ0SCh3now162u1fZZV-1" value="Functional Requirements:&lt;div&gt;&lt;div&gt;- Users should be able to upload a video&lt;/div&gt;&lt;div&gt;- Users should be able to interact with a video: watch/like/comment&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-896.5" y="-993" width="491" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="PlQ0SCh3now162u1fZZV-2" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="PlQ0SCh3now162u1fZZV-2" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="-896.5" y="-1047.5" width="135" height="31" as="geometry" />
         </mxCell>
-        <mxCell id="PlQ0SCh3now162u1fZZV-3" value="Scale:&lt;div&gt;100M DAU&lt;/div&gt;&lt;div&gt;1/100 will upload a video - 1M uploads per day&lt;/div&gt;&lt;div&gt;10 videos to watch per user per day - 100M * 10 = 1000M = 1B&lt;/div&gt;&lt;div&gt;max video size - 256GB&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="PlQ0SCh3now162u1fZZV-3" value="Scale:&lt;div&gt;100M DAU&lt;/div&gt;&lt;div&gt;1/100 will upload a video - 1M uploads per day&lt;/div&gt;&lt;div&gt;10 videos to watch per user per day - 100M * 10 = 1000M = 1B&lt;/div&gt;&lt;div&gt;max video size - 256GB&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-896.5" y="-906" width="464" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="PlQ0SCh3now162u1fZZV-4" value="Non-functional Requirements:&lt;div&gt;- Availability &amp;gt;&amp;gt; Consistency for video uploads (eventual consistency)&lt;/div&gt;&lt;div&gt;- Support upload/streaming for large videos&lt;/div&gt;&lt;div&gt;- Low Latency Streaming (&amp;lt;500ms) true in low bandwidth&lt;/div&gt;&lt;div&gt;- Scalability to scale 1M uploads/1B views daily&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="PlQ0SCh3now162u1fZZV-4" value="Non-functional Requirements:&lt;div&gt;- Availability &amp;gt;&amp;gt; Consistency for video uploads (eventual consistency)&lt;/div&gt;&lt;div&gt;- Support upload/streaming for large videos&lt;/div&gt;&lt;div&gt;- Low Latency Streaming (&amp;lt;500ms) true in low bandwidth&lt;/div&gt;&lt;div&gt;- Scalability to scale 1M uploads/1B views daily&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-896.5" y="-783" width="507" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="PlQ0SCh3now162u1fZZV-5" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="PlQ0SCh3now162u1fZZV-5" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="-892.5" y="-643" width="127" height="31" as="geometry" />
         </mxCell>
-        <mxCell id="PlQ0SCh3now162u1fZZV-6" value="- Video&lt;div&gt;- Video Metadata&lt;/div&gt;&lt;div&gt;- User&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="PlQ0SCh3now162u1fZZV-6" value="- Video&lt;div&gt;- Video Metadata&lt;/div&gt;&lt;div&gt;- User&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-892.5" y="-601" width="140" height="70" as="geometry" />
         </mxCell>
       </root>
