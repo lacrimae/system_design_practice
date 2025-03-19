@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
   <diagram name="youtube" id="Ptf_d_CCf5I-wh_goVZh">
-    <mxGraphModel dx="2155" dy="1804" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2580" dy="2072" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,6 +46,14 @@
         <mxCell id="Sh0EnFzFZQxE2yDh7pOI-7" value="Video Service" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="293" y="-700" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Sh0EnFzFZQxE2yDh7pOI-11" target="Sh0EnFzFZQxE2yDh7pOI-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-28" value="s3 even notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Sh0EnFzFZQxE2yDh7pOI-27">
+          <mxGeometry x="-0.2869" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Sh0EnFzFZQxE2yDh7pOI-11" value="Video data DB&lt;div&gt;(S3 blob storage)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="499" y="-837" width="86" height="93" as="geometry" />
         </mxCell>
@@ -79,7 +87,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-21" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;1. upload directly to S3&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;w/ multipart upload&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;2. download directly from S3&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Sh0EnFzFZQxE2yDh7pOI-19">
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-21" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;1. upload directly to S3&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;w/ multipart upload (chunks)&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;2. download directly from S3 (chunks)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Sh0EnFzFZQxE2yDh7pOI-19">
           <mxGeometry x="0.1542" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -87,8 +95,8 @@
         <mxCell id="Sh0EnFzFZQxE2yDh7pOI-22" value="- chunk&lt;div&gt;- PUT /presignedurls&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-122" y="-629" width="128" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-23" value="video_metadata&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;id,&lt;/div&gt;&lt;div&gt;name,&lt;/div&gt;&lt;div&gt;description,&lt;/div&gt;&lt;div&gt;status: pending | uploaded&lt;/div&gt;&lt;div&gt;s3Url&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="613" y="-623" width="199" height="127" as="geometry" />
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-23" value="video_metadata&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;id,&lt;/div&gt;&lt;div&gt;name,&lt;/div&gt;&lt;div&gt;description,&lt;/div&gt;&lt;div&gt;status: pending | uploaded,&lt;/div&gt;&lt;div&gt;fullS3Url,&lt;/div&gt;chunks&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[] // s3 chunk urls&lt;/span&gt;&lt;/blockquote&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="608.5" y="-604" width="202" height="142" as="geometry" />
         </mxCell>
         <mxCell id="Sh0EnFzFZQxE2yDh7pOI-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Sh0EnFzFZQxE2yDh7pOI-11" target="Sh0EnFzFZQxE2yDh7pOI-12">
           <mxGeometry relative="1" as="geometry" />
@@ -97,6 +105,41 @@
           <mxGeometry x="-0.1077" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=1;" edge="1" parent="1" source="Sh0EnFzFZQxE2yDh7pOI-26" target="Sh0EnFzFZQxE2yDh7pOI-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="543" y="-621" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="-867" />
+              <mxPoint x="850" y="-621" />
+              <mxPoint x="542" y="-621" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-33" value="updates metadata" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Sh0EnFzFZQxE2yDh7pOI-32">
+          <mxGeometry x="0.3658" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-26" value="Chunker" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="710" y="-897" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-29" value="2-10s clips" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="732.5" y="-814" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="Sh0EnFzFZQxE2yDh7pOI-26" target="Sh0EnFzFZQxE2yDh7pOI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-31" value="store chunks back in S3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Sh0EnFzFZQxE2yDh7pOI-30">
+          <mxGeometry x="-0.039" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-34" value="Chunks for upload and read/streaming are different:&lt;div&gt;upload uses really large chunks (5-10mb) to minimize the amount of requests, no consideration fro playback experience&lt;/div&gt;&lt;div&gt;Streaming chunks are optimized for the playback experience, so they&#39;re all small segments (2-10s)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="-1053" width="653" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Sh0EnFzFZQxE2yDh7pOI-35" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Video Container (mp4, mov, avi, etc)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- video codec data (H.264, Vp9, Av1)&lt;/div&gt;&lt;div&gt;- audio codec data (MP3, Opus, etc)&lt;/div&gt;&lt;div&gt;- parameters (bitrate, resolution, frame rate, aspect ration, duration)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="473" y="-1067" width="376" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
