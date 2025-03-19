@@ -206,14 +206,14 @@
         <mxCell id="iS1Ttse3CEID1Txa0kVD-4" value="Video Service" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="313" y="-680" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iS1Ttse3CEID1Txa0kVD-5" value="1M entries per day * 1kb * 365 = 365 000 000 KB .35TB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="591" y="-579" width="315" height="26" as="geometry" />
+        <mxCell id="iS1Ttse3CEID1Txa0kVD-5" value="1M entries per day * 1kb * 365 = 365 000 000 KB = .35TB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="586" y="-579" width="325" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="XteTEbKlLTetxFG-Vj9d" name="tinyurl">
-    <mxGraphModel dx="3960" dy="2544" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2753" dy="1781" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
