@@ -459,32 +459,50 @@
         </mxCell>
         <mxCell id="IjiKB-747pUPl7-p9aJl-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-3" target="etjfxlxJYTYRdtBJyq4H-4">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="207" y="384" as="sourcePoint" />
-            <mxPoint x="285" y="383.9999999999998" as="targetPoint" />
+            <mxPoint x="380" y="444" as="sourcePoint" />
+            <mxPoint x="458" y="443.9999999999998" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-1" value="File Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="528" y="241" width="120" height="60" as="geometry" />
+          <mxGeometry x="720" y="306.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-3" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="79" y="354" width="120" height="60" as="geometry" />
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-3" target="etjfxlxJYTYRdtBJyq4H-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="891.4615384615386" y="-20.923076923076906" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-17" value="download directly from S3 using S3 link" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-16">
+          <mxGeometry x="0.1321" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="345.5" width="114" height="197" as="geometry" />
         </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-4" target="etjfxlxJYTYRdtBJyq4H-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-6" value="upload(file, fileMetadata)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-5">
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-6" value="upload(file, fileMetadata)&lt;div&gt;getFile(fileId)&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-5">
           <mxGeometry x="0.0329" y="4" relative="1" as="geometry">
+            <mxPoint x="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-4" target="etjfxlxJYTYRdtBJyq4H-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-23" value="getChanges()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-22">
+          <mxGeometry x="-0.0565" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-4" value="Load Balancer &amp;amp;&amp;nbsp;&lt;div&gt;API Gateway&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- routing&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- authentication&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- rate limiting&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- SSL termination&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="287" y="246.5" width="111" height="275" as="geometry" />
+          <mxGeometry x="460" y="306.5" width="111" height="275" as="geometry" />
         </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-7" value="S3 (blob storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="737" y="93" width="115" height="109" as="geometry" />
+          <mxGeometry x="910" y="153" width="115" height="109" as="geometry" />
         </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-8" value="Postgres/MySql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="737" y="305" width="115" height="109" as="geometry" />
+          <mxGeometry x="910" y="365" width="115" height="109" as="geometry" />
         </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-1" target="etjfxlxJYTYRdtBJyq4H-7">
           <mxGeometry relative="1" as="geometry" />
@@ -502,8 +520,26 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-14" value="file_metadata&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- name: text,&lt;/div&gt;&lt;div&gt;- type: enum&lt;/div&gt;&lt;div&gt;- size: number (in bytes)&lt;/div&gt;&lt;div&gt;- owner_id FK: uuid&amp;nbsp;&lt;/div&gt;&lt;div&gt;- s3_link&lt;/div&gt;&lt;div&gt;- ...metadata&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="869" y="287" width="147" height="127" as="geometry" />
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-14" value="file_metadata&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- name: text,&lt;/div&gt;&lt;div&gt;- type: enum,&lt;/div&gt;&lt;div&gt;- size: number (in bytes),&lt;/div&gt;&lt;div&gt;- owner_id FK: uuid,&lt;/div&gt;&lt;div&gt;- s3_link,&lt;/div&gt;&lt;div&gt;- creation_date: timestamp,&lt;/div&gt;&lt;div&gt;- last_update_date: timestamp,&lt;/div&gt;&lt;div&gt;- ...metadata&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1042" y="333" width="183" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-15" value="Storing the raw bytes of the files" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1021" y="142" width="189" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-18" value="Local Folder" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;" vertex="1" parent="1">
+          <mxGeometry x="255" y="499" width="82.5" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-19" value="Client App&lt;div&gt;responsible for syncing local folder and S3&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="248" y="352" width="98" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-20" value="1. Remote Changed&lt;div&gt;- pull for changes&lt;/div&gt;&lt;div&gt;- download the new file and replace&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Local Changed&lt;/div&gt;&lt;div&gt;- upload the changed file to Remote&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;use OS APIs to detect any changes:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Windows API:&amp;nbsp;&lt;/div&gt;&lt;div&gt;- FileSystemWatcher&lt;/div&gt;&lt;div&gt;Mac OS API:&lt;/div&gt;&lt;div&gt;- FSEvents&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2" y="352" width="210" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-21" value="Sync Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="728" y="472" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-24" value="Local DB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="256.5" y="453" width="81" height="41" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
