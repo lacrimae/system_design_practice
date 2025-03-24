@@ -423,7 +423,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K2iyZU-mgYxE8OzBVc8b" name="dropbox">
-    <mxGraphModel dx="2174" dy="1521" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1707" dy="1226" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -546,6 +546,9 @@
         </mxCell>
         <mxCell id="80WttukKXqSlOcVC4WzP-1" value="chunk&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- file_metadata_id FK: uuid,&lt;/div&gt;&lt;div&gt;- status: enum,&lt;/div&gt;&lt;div&gt;- s3_link&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1225" y="312" width="165" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="tp2BqbJwHo-3h123wJ1V-1" value="Deep Dives:&lt;div&gt;1.Upload directly to S3 blob storage with pre-signed urls (request pre-signed urls through File Service)&lt;/div&gt;&lt;div&gt;2. How do we update the chunk status?&amp;nbsp;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #1 - insecure: upload a chunk, receive a response that chunk is uploaded, and then relying on a client make an additional&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;request to the client with the chunk_id, status: uploaded to update the file_metadata. The issue with this approach that we&#39;re directly relying/trusting&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;our client, and the client could lie to us (a malicious user could send a wrong status which will create an inconsistency between s3 status/chunk status)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #2 - use a pattern &quot;Trust but Verify&quot;: before updating file_metadata, we need to make an additional request to S3 storage to verify that the chunk&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;is uploaded.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #3 - use S3 notifications. S3 notification event will be triggered once a chunk is uploaded and update the status directly in file_metadata&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="784" y="561" width="869" height="142" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
