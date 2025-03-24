@@ -423,7 +423,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K2iyZU-mgYxE8OzBVc8b" name="dropbox">
-    <mxGraphModel dx="1953" dy="1381" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2174" dy="1521" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -541,8 +541,8 @@
         <mxCell id="etjfxlxJYTYRdtBJyq4H-24" value="Local DB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="256.5" y="453" width="81" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="XV3mMw1V0_ARTCzaIgFa-1" value="Upload large files: 50 GB issues:&lt;div&gt;1. uploading to the file service, then to S3 storage is redundant, it&#39;s a loss of bandwidth&lt;/div&gt;&lt;div&gt;2. we cannot upload through api gateway using http - there&#39;s a limit of 10MB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;50GB @ 100mbps = 1h 12m&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Chunk files on a client to 5MB chunks&lt;/div&gt;&lt;div&gt;for 50GB = 50000MB / 5 MB = 10000 chunks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;Fingerprint&lt;/b&gt; each chunk&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="212" y="560" width="478" height="156" as="geometry" />
+        <mxCell id="XV3mMw1V0_ARTCzaIgFa-1" value="Upload large files: 50 GB issues:&lt;div&gt;1. uploading to the file service, then to S3 storage is redundant, it&#39;s a loss of bandwidth&lt;/div&gt;&lt;div&gt;2. we cannot upload through api gateway using http - there&#39;s a limit of 10MB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;50GB @ 100mbps = 1h 12m&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;steps:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Chunk files on a client to 5MB chunks&lt;/div&gt;&lt;div&gt;for 50GB = 50000MB / 5 MB = 10000 chunks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;2. Fingerprint&lt;/b&gt; each chunk: hash(bytes)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="212" y="627" width="478" height="185" as="geometry" />
         </mxCell>
         <mxCell id="80WttukKXqSlOcVC4WzP-1" value="chunk&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- file_metadata_id FK: uuid,&lt;/div&gt;&lt;div&gt;- status: enum,&lt;/div&gt;&lt;div&gt;- s3_link&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1225" y="312" width="165" height="84" as="geometry" />
