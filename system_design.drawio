@@ -423,7 +423,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K2iyZU-mgYxE8OzBVc8b" name="dropbox">
-    <mxGraphModel dx="1707" dy="1226" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2658" dy="1827" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -498,6 +498,14 @@
         <mxCell id="etjfxlxJYTYRdtBJyq4H-4" value="Load Balancer &amp;amp;&amp;nbsp;&lt;div&gt;API Gateway&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- routing&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- authentication&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- rate limiting&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- SSL termination&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="306.5" width="111" height="275" as="geometry" />
         </mxCell>
+        <mxCell id="OvEh-RvhsHhTRr3o7u3M-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-7" target="etjfxlxJYTYRdtBJyq4H-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OvEh-RvhsHhTRr3o7u3M-2" value="S3 notification event" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OvEh-RvhsHhTRr3o7u3M-1">
+          <mxGeometry x="0.1368" y="-13" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-7" value="S3 (blob storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="910" y="153" width="115" height="109" as="geometry" />
         </mxCell>
@@ -523,8 +531,8 @@
         <mxCell id="etjfxlxJYTYRdtBJyq4H-14" value="file_metadata&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- name: text,&lt;/div&gt;&lt;div&gt;- type: enum,&lt;/div&gt;&lt;div&gt;- size: number (in bytes),&lt;/div&gt;&lt;div&gt;- owner_id FK: uuid,&lt;/div&gt;&lt;div&gt;- s3_link,&lt;/div&gt;&lt;div&gt;- creation_date: timestamp,&lt;/div&gt;&lt;div&gt;- last_update_date: timestamp,&lt;/div&gt;&lt;div&gt;- status: started | uploaded&lt;/div&gt;&lt;div&gt;- ...metadata&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1042" y="326" width="183" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-15" value="Storing the raw bytes of the files" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1021" y="142" width="189" height="26" as="geometry" />
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-15" value="Storing the raw bytes of the files&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;S3: multi-part upload&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1021" y="128" width="189" height="55" as="geometry" />
         </mxCell>
         <mxCell id="etjfxlxJYTYRdtBJyq4H-18" value="Local Folder" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;" vertex="1" parent="1">
           <mxGeometry x="255" y="499" width="82.5" height="33" as="geometry" />
