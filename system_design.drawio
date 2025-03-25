@@ -576,13 +576,19 @@
           <mxGeometry x="-1493" y="128" width="106" height="26" as="geometry" />
         </mxCell>
         <mxCell id="hZOInK8lkXoX4SPYT6mo-1" value="Functional Requirements:&lt;div&gt;&lt;div&gt;- Users should be able to &lt;b&gt;set&lt;/b&gt;, &lt;b&gt;get&lt;/b&gt;, and &lt;b&gt;delete&lt;/b&gt; key-value pairs.&lt;/div&gt;&lt;div&gt;- Users should be able to configure the expiration time for key-value pairs.&lt;/div&gt;&lt;div&gt;- Data should be evicted according to Least Recently Used (LRU) policy.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Below the line (out of scope)&lt;/div&gt;&lt;div&gt;- Users should be able to configure the cache size.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-1493" y="153" width="410" height="113" as="geometry" />
+          <mxGeometry x="-1493" y="160" width="410" height="113" as="geometry" />
         </mxCell>
         <mxCell id="hZOInK8lkXoX4SPYT6mo-2" value="Eviction Policies:&lt;div&gt;&lt;br&gt;&lt;div&gt;Time-based:&lt;/div&gt;&lt;div&gt;- TTL (Time To Live)&lt;/div&gt;&lt;div&gt;Size-based:&lt;/div&gt;&lt;div&gt;- LRU (least recently used)&lt;/div&gt;&lt;div&gt;- LFU (least frequently used)&lt;/div&gt;&lt;div&gt;- FIFO (first in first out)&lt;/div&gt;&lt;div&gt;- LRFU (least frequently &amp;amp; recently used)&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-1493" y="268" width="235" height="142" as="geometry" />
+          <mxGeometry x="-1493" y="276" width="235" height="142" as="geometry" />
         </mxCell>
-        <mxCell id="Subwh6OflqbcaBSKDEaU-1" value="Non-Functional Requirements:&lt;div&gt;-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Scale: store up to &lt;b&gt;1TB&lt;/b&gt; of data and expect to handle a peak of up to &lt;b&gt;100k requests per second&lt;/b&gt;.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-1493" y="439" width="529" height="84" as="geometry" />
+        <mxCell id="Subwh6OflqbcaBSKDEaU-1" value="Non-Functional Requirements:&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;The system should be highly available. Eventual consistency is acceptable.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- The system should support low latency operations (&amp;lt; 10ms for get and set requests).&lt;/div&gt;&lt;div&gt;- The system should be scalable to support the expected 1TB of data and 100k requests per second.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Below the line (out of scope)&lt;/div&gt;&lt;div&gt;- Durability (data persistence across restarts)&lt;/div&gt;&lt;div&gt;- Strong consistency guarantees&lt;/div&gt;&lt;div&gt;- Complex querying capabilities&lt;/div&gt;&lt;div&gt;- Transaction support&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Scale: store up to &lt;b&gt;1TB&lt;/b&gt; of data and expect to handle a peak of up to &lt;b&gt;100k requests per second&lt;/b&gt;.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1493" y="460" width="552" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="sCC1xh2GsP5VZtGUOOFr-1" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-1490" y="693" width="100" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="K1CxeyfUa0m13JQ_6Pck-1" value="- Key&lt;div&gt;- Value&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1490" y="724" width="55" height="41" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
