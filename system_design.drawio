@@ -581,6 +581,9 @@
         <mxCell id="hZOInK8lkXoX4SPYT6mo-2" value="Eviction Policies:&lt;div&gt;&lt;br&gt;&lt;div&gt;Time-based:&lt;/div&gt;&lt;div&gt;- TTL (Time To Live)&lt;/div&gt;&lt;div&gt;Size-based:&lt;/div&gt;&lt;div&gt;- LRU (least recently used)&lt;/div&gt;&lt;div&gt;- LFU (least frequently used)&lt;/div&gt;&lt;div&gt;- FIFO (first in first out)&lt;/div&gt;&lt;div&gt;- LRFU (least frequently &amp;amp; recently used)&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-1493" y="268" width="235" height="142" as="geometry" />
         </mxCell>
+        <mxCell id="Subwh6OflqbcaBSKDEaU-1" value="Non-Functional Requirements:&lt;div&gt;-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Scale: store up to &lt;b&gt;1TB&lt;/b&gt; of data and expect to handle a peak of up to &lt;b&gt;100k requests per second&lt;/b&gt;.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1493" y="439" width="529" height="84" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
