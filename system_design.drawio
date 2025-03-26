@@ -562,7 +562,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="el7KaRuGNUAxwscP_oVZ" name="distributed cache">
-    <mxGraphModel dx="4360" dy="2144" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2955" dy="1004" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -627,6 +627,95 @@
         </mxCell>
         <mxCell id="Q7qzO_BLJ7WN3gepMy-6-19" value="Class LRUCache {&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// #3 Version -&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Data should be evicted according to Least Recently Used (LRU) policy.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;The solution is to combine two data structures:&lt;br&gt;A hash table for O(1) lookups - This gives us instant access to any item in the cache&lt;br&gt;A doubly linked list to track access order - This lets us maintain a perfect history of which items were used when&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Java has a data structure - LinkedHashMap (or we can implement it manually using Node head, tail with next, prev pointers)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private int capacity;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private LinkedHashMap&amp;lt;Integer, Integer&amp;gt; dic;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;public LRUCache(int capacity) {&lt;/span&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this.capacity = capacity;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // LinkedHashMap(int initialCapacity, float loadFactor, boolean accessOrder)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; dic = new LinkedHashMap&amp;lt;&amp;gt;(5, 0.75f, true) {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @Override&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; private boolean removeEldestEntry(Map.Entry&amp;lt;Integer, Integer&amp;gt; eldest) {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return size() &amp;gt; capacity;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; public int get(int key) {&lt;/span&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return dic.getOrDefault(key, -1);&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; public void put(int key, int value) {&lt;/span&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; dic.put(key, value);&lt;/span&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-50" y="659" width="676" height="516" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-20" value="Deep Dives" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-1493" y="1167" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-21" value="1.&amp;nbsp;How do we ensure our cache is highly available and fault tolerant?&lt;div&gt;The key challenge here is data replication - we need multiple copies of our data spread across different nodes.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;solutions:&lt;/div&gt;&lt;div&gt;- Bad: Synchronous Replication&lt;br&gt;The simplest approach is to maintain a few replicas of each shard. When a write comes in,&amp;nbsp;&lt;/div&gt;&lt;div&gt;we update all replicas synchronously and only respond once all replicas have acknowledged the write.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Good: Asynchronous Replication&lt;/div&gt;&lt;div&gt;Another option is to update one primary copy immediately and then propagate changes to replicas asynchronously&lt;/div&gt;&lt;div&gt;&amp;nbsp;-- confirming the write once only the primary has acknowledged the change.&amp;nbsp;&lt;/div&gt;&lt;div&gt;This aligns well with the eventual consistency model that most caches adopt (and is a non-functional requirement for us),&lt;/div&gt;&lt;div&gt;&amp;nbsp;making it more suitable for a cache with our requirements than synchronous replication.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Good: Peer-to-Peer Replication&lt;/b&gt;&lt;/div&gt;&lt;div&gt;In peer-to-peer replication, each node is equal and can accept both reads and writes.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Changes are propagated to other nodes using &lt;b&gt;gossip protocols&lt;/b&gt;,&amp;nbsp;&lt;/div&gt;&lt;div&gt;where nodes periodically exchange information about their state with randomly selected peers.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.&amp;nbsp;How do we ensure our cache is scalable?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1493" y="1199.5" width="658" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-22" target="Q7qzO_BLJ7WN3gepMy-6-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-29" value="write to all&lt;div&gt;wait for all to confirm&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q7qzO_BLJ7WN3gepMy-6-26">
+          <mxGeometry x="-0.283" y="3" relative="1" as="geometry">
+            <mxPoint x="25" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-22" target="Q7qzO_BLJ7WN3gepMy-6-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-22" target="Q7qzO_BLJ7WN3gepMy-6-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-22" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1850" y="1259.5" width="86" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-23" value="cache replica 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1636" y="1203.5" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-24" value="cache replica 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1633" y="1263" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-25" value="cache replica 3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1633" y="1322" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-30" target="Q7qzO_BLJ7WN3gepMy-6-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-30" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1910" y="1488" width="86" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-31" value="cache replica 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1691" y="1455" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-32" value="cache replica 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1693" y="1528" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-33" target="Q7qzO_BLJ7WN3gepMy-6-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-36" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-33" target="Q7qzO_BLJ7WN3gepMy-6-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-33" value="Leader Cache" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1795" y="1491.5" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-37" value="asynchronously propagate&lt;div&gt;changes&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;to replicas&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1688" y="1487" width="159" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-38" target="Q7qzO_BLJ7WN3gepMy-6-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-45" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-38" target="Q7qzO_BLJ7WN3gepMy-6-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-46" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-38" target="Q7qzO_BLJ7WN3gepMy-6-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-38" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1906" y="1684" width="86" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-39" target="Q7qzO_BLJ7WN3gepMy-6-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-39" value="cache replica 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1758" y="1630" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="Q7qzO_BLJ7WN3gepMy-6-40" target="Q7qzO_BLJ7WN3gepMy-6-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-40" value="cache replica 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1758" y="1687.5" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-41" value="cache replica 3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1758" y="1745" width="91" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-47" value="write to any of the nodes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1937.5" y="1741" width="149" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q7qzO_BLJ7WN3gepMy-6-48" value="propagate changes to other nodes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1667" y="1658" width="201" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
