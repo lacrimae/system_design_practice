@@ -721,7 +721,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="JPT7PNa8H3Ak_uj5RF2g" name="instagram">
-    <mxGraphModel dx="1642" dy="1185" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1780" dy="1272" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -768,6 +768,13 @@
             <mxPoint x="-50" y="10" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-10" target="sS5vmSUBj571SvYDJTSG-33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="664" y="716" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="sS5vmSUBj571SvYDJTSG-10" value="API Gateway&lt;div&gt;- Routing&lt;/div&gt;&lt;div&gt;- Rate Limiting&lt;/div&gt;&lt;div&gt;- Authentication&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="604" y="329" width="120" height="290" as="geometry" />
         </mxCell>
@@ -802,14 +809,43 @@
             <mxGeometry x="1534" y="287.9966666666667" width="188" height="94" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="sS5vmSUBj571SvYDJTSG-28" value="Function Requirement #3 - Get Chronological Order Posts&lt;div&gt;1. Get Followees: using user.id which is taken from a JWT token&lt;/div&gt;&lt;div&gt;2. Get Posts:&amp;nbsp;For each of those followed users, query the Post table to get their recent posts.&lt;/div&gt;&lt;div&gt;3.&amp;nbsp;Merge and Sort: Combine all the retrieved posts and sort them chronologically (by timestamp or postId).&lt;/div&gt;&lt;div&gt;4.&amp;nbsp;Return: Return the sorted posts to the client.&lt;br&gt;&lt;br&gt;Note that these queries would be incredibly slow if we needed to look through every single Followers row for every user and then search through every Post row to find the ones we want.&amp;nbsp;&lt;/div&gt;&lt;div&gt;To avoid these full table scans, we can add a few indexes to our database.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="651" y="656" width="1006" height="127" as="geometry" />
+        <mxCell id="sS5vmSUBj571SvYDJTSG-28" value="Function Requirement #3 - Get Chronological Order Posts (Fan-Out on Read)&lt;div&gt;1. Get Followees: using user.id which is taken from a JWT token&lt;/div&gt;&lt;div&gt;2. Get Posts:&amp;nbsp;For each of those followed users, query the Post table to get their recent posts.&lt;/div&gt;&lt;div&gt;3.&amp;nbsp;Merge and Sort: Combine all the retrieved posts and sort them chronologically (by timestamp or postId).&lt;/div&gt;&lt;div&gt;4.&amp;nbsp;Return: Return the sorted posts to the client.&lt;br&gt;&lt;br&gt;Note that these queries would be incredibly slow if we needed to look through every single Followers row for every user and then search through every Post row to find the ones we want.&amp;nbsp;&lt;/div&gt;&lt;div&gt;To avoid these full table scans, we can add a few indexes to our database.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="653" y="904" width="1006" height="127" as="geometry" />
         </mxCell>
         <mxCell id="sS5vmSUBj571SvYDJTSG-29" value="4. Deep Dives" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="1830" y="-58" width="93" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="sS5vmSUBj571SvYDJTSG-30" value="1. The system should deliver feed content with low latency (&amp;lt; 500ms)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1830" y="5" width="385" height="41" as="geometry" />
+        <mxCell id="sS5vmSUBj571SvYDJTSG-30" value="1. The system should deliver feed content with low latency (&amp;lt; 500ms)&lt;div&gt;- Bad Approach: Simple Caching (Improving Fan-Out on Read)&lt;/div&gt;&lt;div&gt;- Good Solution: Precompute Feeds (Fan-Out on Write)&lt;br&gt;&lt;br&gt;A much better approach is to precompute the feeds. Instead of generating the feed when the user requests it (fan-out on read),&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;we generate it when a user posts&lt;/b&gt; (fan-out on write).&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="-23" width="693" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-40" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-31" target="sS5vmSUBj571SvYDJTSG-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-31" value="Precomputed&lt;div&gt;Feed Cache&lt;/div&gt;&lt;div&gt;(Redis)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1004" y="551" width="108" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-33" target="sS5vmSUBj571SvYDJTSG-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-33" value="Message Queue -&amp;nbsp;&lt;div&gt;store new postId&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="791" y="693" width="166" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-31" target="sS5vmSUBj571SvYDJTSG-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-37" target="sS5vmSUBj571SvYDJTSG-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-37" value="Feed Fan-Out on Write&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Service&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="998" y="686" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS5vmSUBj571SvYDJTSG-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-37" target="sS5vmSUBj571SvYDJTSG-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1482" y="716" />
+              <mxPoint x="1482" y="404" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
