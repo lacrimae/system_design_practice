@@ -902,7 +902,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yTHowqVnXAIj-98l2Kkx" name="Local Delivery">
-    <mxGraphModel dx="2456" dy="1047" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1365" dy="357" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -942,6 +942,14 @@
         <mxCell id="uZaY9qesb8EvW5n6evjB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-15" target="uZaY9qesb8EvW5n6evjB-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-4" value="GET" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uZaY9qesb8EvW5n6evjB-18">
+          <mxGeometry x="-0.0752" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-15" target="I0LP1a1x3WWxmOki-7UH-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-15" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="703" y="655.5" width="75" height="279" as="geometry" />
         </mxCell>
@@ -951,7 +959,7 @@
         <mxCell id="uZaY9qesb8EvW5n6evjB-17" value="Availability Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="887" y="765" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-19" value="Oracle DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="uZaY9qesb8EvW5n6evjB-19" value="PostgresDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="1097" y="647" width="105" height="81" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;distribution_center {&lt;br&gt;id: uuid PK,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;name: text,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;location: longitude/latitute&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
@@ -984,6 +992,20 @@
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-31" value="&lt;div&gt;When a user makes a request to get availability for items A, B, and C from latitude X and longitude Y, here&#39;s what happens:&lt;/div&gt;&lt;div&gt;1. We make a request to the Availability Service with the user&#39;s location X and Y and any relevant filters.&lt;/div&gt;&lt;div&gt;2. The availability service fires a request to the Nearby Service with the user&#39;s location X and Y.&lt;/div&gt;&lt;div&gt;3. The nearby service returns us a list of DCs that can deliver to our location.&lt;/div&gt;&lt;div&gt;4. With the DCs available, the availability service query our database with those DC IDs.&lt;/div&gt;&lt;div&gt;5. We sum up the results and return them to our client.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="490" y="435" width="670" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I0LP1a1x3WWxmOki-7UH-1" target="uZaY9qesb8EvW5n6evjB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-6" value="write transaction" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="I0LP1a1x3WWxmOki-7UH-5">
+          <mxGeometry x="-0.6109" y="-2" relative="1" as="geometry">
+            <mxPoint x="30" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-1" value="Order Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="657" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-3" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="809" y="691" width="51" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
