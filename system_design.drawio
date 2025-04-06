@@ -902,10 +902,19 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yTHowqVnXAIj-98l2Kkx" name="Local Delivery">
-    <mxGraphModel dx="1242" dy="785" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1435" dy="654" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="uZaY9qesb8EvW5n6evjB-2" value="&amp;gt; Gopuff delivers goods typically found in a convenience store via rapid delivery and 500+ micro-fulfillment centers." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-212" y="191" width="628" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-3" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-212" y="237" width="106" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-4" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Functional Requirements:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;1.&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Customers should be able to query availability of items, deliverable in 1 hour,&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;by location (i.e. the effective availability is the union of all inventory nearby DCs).&lt;/span&gt;&lt;div style=&quot;&quot;&gt;2. Customers should be able to order multiple items at the same time.&lt;br&gt;&lt;br&gt;&lt;div&gt;Below the line (out of scope):&lt;/div&gt;&lt;div&gt;1. Handling payments/purchases.&lt;/div&gt;&lt;div&gt;2. Handling driver routing and deliveries.&lt;/div&gt;&lt;div&gt;3. Search functionality and catalog APIs. (The system is strictly concerned with availability and ordering).&lt;/div&gt;&lt;div&gt;4. Cancellations and returns.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Non-Functional Requirements:&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Availability requests should fast (&amp;lt;100ms) to support use-cases like search.&lt;/div&gt;&lt;div&gt;2. Ordering should be strongly consistent: two customers should not be able to purchase the same physical product.&lt;/div&gt;&lt;div&gt;3. System should be able to support 10k DCs and 100k items in the catalog across DCs.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. Order volume will be 10M orders/day&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Below the line (out of scope):&lt;/div&gt;&lt;div&gt;1. Privacy and security.&lt;/div&gt;&lt;div&gt;2. Disaster recovery.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-212" y="283" width="634" height="329" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
