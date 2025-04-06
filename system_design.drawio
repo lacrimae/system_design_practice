@@ -960,10 +960,10 @@
           <mxGeometry x="887" y="765" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-19" value="PostgresDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="1097" y="647" width="105" height="81" as="geometry" />
+          <mxGeometry x="1144" y="723.5" width="197" height="143" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;distribution_center {&lt;br&gt;id: uuid PK,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;name: text,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;location: longitude/latitute&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1202" y="924" width="153" height="84" as="geometry" />
+          <mxGeometry x="1177" y="883" width="153" height="84" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-17" target="uZaY9qesb8EvW5n6evjB-19">
           <mxGeometry relative="1" as="geometry" />
@@ -985,10 +985,10 @@
           <mxGeometry x="887" y="895" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-25" value="DC Table" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1112" y="934.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="1151.5" y="808" width="50.5" height="50.5" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-30" value="item{ &#xa;id,&#xa;name,&#xa;description&#xa;}&#xa;&#xa;&#xa;inventory { - Inventory entity is a physical item at a specific location.&#xa;id: uuid PK&#xa;item_id,&#xa;dc_id,&#xa;quantity&#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1222.9951851851847" y="596.5029629629628" width="386" height="123" as="geometry" />
+          <mxGeometry x="1419.9951851851847" y="594.0029629629628" width="386" height="123" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-31" value="&lt;div&gt;GET call:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;When a user makes a request to get availability for items A, B, and C from latitude X and longitude Y, here&#39;s what happens:&lt;/div&gt;&lt;div&gt;1. We make a request to the Availability Service with the user&#39;s location X and Y and any relevant filters.&lt;/div&gt;&lt;div&gt;2. The availability service fires a request to the Nearby Service with the user&#39;s location X and Y.&lt;/div&gt;&lt;div&gt;3. The nearby service returns us a list of DCs that can deliver to our location.&lt;/div&gt;&lt;div&gt;4. With the DCs available, the availability service query our database with those DC IDs.&lt;/div&gt;&lt;div&gt;5. We sum up the results and return them to our client.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST call:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;For an order, the process looks like this:&lt;/div&gt;&lt;div&gt;1. The user makes a request to the Orders Service to place an order for items A, B, and C.&lt;/div&gt;&lt;div&gt;2. The Orders Service makes creates a singular transaction which we submit to our Postgres leader.&amp;nbsp;&lt;/div&gt;&lt;div&gt;This transaction:&amp;nbsp;&lt;/div&gt;&lt;div&gt;- a. Checks the inventory for items A, B, and C &amp;gt; 0.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- b. If any of the items are out of stock, the transaction fails.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- c. If all items are in stock, the transaction records the order and updates the status for inventory items A, B, and C to &quot;ordered&quot;.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- d. A new row is created in the Orders table (and OrderItems table) recording the order for A, B, and C.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- e. The transaction is committed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. If the transaction succeeds, we return the order to the user.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="503" y="241" width="700" height="329" as="geometry" />
