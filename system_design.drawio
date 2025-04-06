@@ -981,6 +981,9 @@
             <mxPoint x="56" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-23" target="I0LP1a1x3WWxmOki-7UH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-23" value="Nearby Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="887" y="895" width="80" height="60" as="geometry" />
         </mxCell>
@@ -1006,6 +1009,15 @@
         </mxCell>
         <mxCell id="I0LP1a1x3WWxmOki-7UH-3" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="809" y="691" width="51" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-7" value="1. Make availability lookups incorporate traffic and drive time&lt;br&gt;Solution:&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="496" y="1041" width="339" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-8" value="5. Deep Dives" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="503" y="996" width="93" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-10" value="Travel Time Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="967" width="80" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
