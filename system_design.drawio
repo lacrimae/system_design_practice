@@ -227,7 +227,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="JPT7PNa8H3Ak_uj5RF2g" name="instagram">
-    <mxGraphModel dx="1583" dy="1148" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2174" dy="1521" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -260,7 +260,7 @@
             <mxPoint x="1142.4285714285716" y="869" as="targetPoint" />
             <Array as="points">
               <mxPoint x="463" y="1159" />
-              <mxPoint x="1712" y="1159" />
+              <mxPoint x="1572" y="1159" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -314,8 +314,16 @@
         <mxCell id="sS5vmSUBj571SvYDJTSG-13" value="Postgres" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="1262" y="324" width="94" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="kz2mWhwbjsMPIMnhESJH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.855;exitY=1;exitDx=0;exitDy=-4.35;exitPerimeter=0;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-14" target="kz2mWhwbjsMPIMnhESJH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kz2mWhwbjsMPIMnhESJH-7" value="S2 notification &amp;amp; queue" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kz2mWhwbjsMPIMnhESJH-6">
+          <mxGeometry x="0.1051" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="sS5vmSUBj571SvYDJTSG-14" value="S3 Blob Storage" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="1665" y="681" width="94" height="80" as="geometry" />
+          <mxGeometry x="1525" y="636" width="94" height="80" as="geometry" />
         </mxCell>
         <mxCell id="sS5vmSUBj571SvYDJTSG-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-12" target="sS5vmSUBj571SvYDJTSG-13">
           <mxGeometry relative="1" as="geometry" />
@@ -409,6 +417,21 @@
         </mxCell>
         <mxCell id="kz2mWhwbjsMPIMnhESJH-1" value="Global CDN&lt;div&gt;download media&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="248" y="419" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="kz2mWhwbjsMPIMnhESJH-4" value="Image Processing Service (Cloudinary/Imagx)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1515" y="1046" width="182" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="kz2mWhwbjsMPIMnhESJH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kz2mWhwbjsMPIMnhESJH-4" target="sS5vmSUBj571SvYDJTSG-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kz2mWhwbjsMPIMnhESJH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=27.5;entryPerimeter=0;curved=1;" edge="1" parent="1" source="kz2mWhwbjsMPIMnhESJH-4" target="sS5vmSUBj571SvYDJTSG-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1719" y="1046" />
+              <mxPoint x="1719" y="310" />
+              <mxPoint x="1356" y="310" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
