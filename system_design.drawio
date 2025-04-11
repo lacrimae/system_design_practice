@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.2" pages="7">
   <diagram id="XteTEbKlLTetxFG-Vj9d" name="tinyurl">
-    <mxGraphModel dx="3374" dy="1921" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3183" dy="1548" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -110,6 +110,14 @@
         <mxCell id="c8CjNAbtBmhlcYozAXpE-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="c8CjNAbtBmhlcYozAXpE-30" target="c8CjNAbtBmhlcYozAXpE-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="5P0359f9zMG8Ae616d6R-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="c8CjNAbtBmhlcYozAXpE-30" target="5P0359f9zMG8Ae616d6R-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-350" y="-124.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5P0359f9zMG8Ae616d6R-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="c8CjNAbtBmhlcYozAXpE-30" target="5P0359f9zMG8Ae616d6R-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="c8CjNAbtBmhlcYozAXpE-30" value="Client" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="30" width="100" height="80" as="geometry" />
         </mxCell>
@@ -207,10 +215,13 @@
           <mxGeometry x="430" y="280" width="360" height="60" as="geometry" />
         </mxCell>
         <mxCell id="aYiAwF0KLdzoDHkgBLy9-2" value="4. Deep Dives" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="-1218" y="-570" width="120" height="60" as="geometry" />
+          <mxGeometry x="-1786" y="-560" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aYiAwF0KLdzoDHkgBLy9-3" value="1.&amp;nbsp;How can we ensure short urls are unique?&lt;div&gt;Unique Counter with&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Base62&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Encoding&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;div style=&quot;&quot;&gt;Base62 is a numbering system that uses 62 characters:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- 26 lowercase letters (a-z)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- 26 uppercase letters (A-Z)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- 10 digits (0-9)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;if we want to support 6 chars:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;6^62 &amp;gt; 56B combinations&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2. How can we ensure that redirects are fast?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Good Solution: In-memory cache layer (Redis)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Great Solution:&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-1218" y="-512" width="313" height="228" as="geometry" />
+        <mxCell id="aYiAwF0KLdzoDHkgBLy9-3" value="&lt;b&gt;1.&amp;nbsp;How can we ensure short urls are unique?&lt;/b&gt;&lt;br&gt;Unique Counter with&amp;nbsp;Base62&amp;nbsp;Encoding&lt;br&gt;&lt;br&gt;Base62 is a numbering system that uses 62 characters:&lt;br&gt;- 26 lowercase letters (a-z)&lt;br&gt;- 26 uppercase letters (A-Z)&lt;br&gt;- 10 digits (0-9)&lt;br&gt;&lt;br&gt;if we want to support 6 chars:&lt;br&gt;6^62 &amp;gt; 56B combinations&lt;br&gt;&lt;br&gt;&lt;b&gt;2. How can we ensure that redirects are fast?&lt;/b&gt;&lt;br&gt;Good Solution: In-memory cache layer (Redis)&lt;br&gt;Great Solution: CDNs&lt;br&gt;&lt;br&gt;&lt;b&gt;3.&amp;nbsp;How can we scale to support 1B shortened urls and 100M DAU?&lt;/b&gt;&lt;br&gt;To scale for 1B shortened URLs and 100 million daily active users (DAU),&amp;nbsp;&lt;br&gt;the system already benefits from a caching layer for reads, so the focus shifts to scaling writes. &lt;br&gt;Each database row is about:&lt;br&gt;500 bytes including metadata&lt;br&gt;1B entries would require 500 bytes * 1 000 000 000 bytes ~500GB—&lt;br&gt;easily handled by modern SSDs or a single Postgres instance.&lt;br&gt;If needed, data can be sharded across servers for scale. Since write throughput is low (~1 URL/sec), &lt;br&gt;almost any relational or NoSQL database (e.g., Postgres, MySQL, DynamoDB) would work.&lt;br&gt;&lt;br&gt;To ensure high availability, database replication and backups should be considered, though they add some complexity.&lt;br&gt;Separating read and write operations into microservices allows each to scale independently based on demand.&lt;br&gt;Horizontal scaling of both services (by adding more instances) improves performance and fault tolerance. &lt;br&gt;However, ensuring globally unique short codes becomes tricky with multiple Write Service instances.&lt;br&gt;This is solved by using a centralized Redis instance to maintain and atomically increment the global counter.&lt;br&gt;Redis&#39;s speed and atomic operations make it ideal for this, allowing each write instance to fetch the next unique counter, encode it (e.g., in Base62), and store the mapping" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1786" y="-460" width="924" height="458" as="geometry" />
+        </mxCell>
+        <mxCell id="5P0359f9zMG8Ae616d6R-2" value="CDN" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="-164.5" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
