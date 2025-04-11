@@ -227,7 +227,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="JPT7PNa8H3Ak_uj5RF2g" name="instagram">
-    <mxGraphModel dx="1320" dy="981" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1861" dy="1324" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -268,6 +268,9 @@
           <mxGeometry x="0.036" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="kz2mWhwbjsMPIMnhESJH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="sS5vmSUBj571SvYDJTSG-9" target="kz2mWhwbjsMPIMnhESJH-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sS5vmSUBj571SvYDJTSG-9" value="Client" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="403" y="434" width="120" height="80" as="geometry" />
@@ -403,6 +406,9 @@
           <mxGeometry x="0.3588" y="39" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="kz2mWhwbjsMPIMnhESJH-1" value="Global CDN&lt;div&gt;download media&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="248" y="419" width="110" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
