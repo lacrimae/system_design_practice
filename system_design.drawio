@@ -227,7 +227,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="JPT7PNa8H3Ak_uj5RF2g" name="instagram">
-    <mxGraphModel dx="2174" dy="1521" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2884" dy="1970" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -432,6 +432,266 @@
               <mxPoint x="1356" y="310" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="K2iyZU-mgYxE8OzBVc8b" name="dropbox">
+    <mxGraphModel dx="1861" dy="1324" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KVpP0q9FYTWia2P56D5a-1" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="-67" width="106" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MaV5HW_tRgavGTKklM-1" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="310" width="100" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MaV5HW_tRgavGTKklM-2" value="Dropbox - a cloud-based file storage service that allows users to store and share files.&amp;nbsp;&lt;div&gt;It provides a secure and reliable way to store and access files from anywhere, on any device.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="-213" width="512" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="y2MaV5HW_tRgavGTKklM-3" value="&lt;div&gt;Functional Requirements:&lt;/div&gt;- upload a file&lt;div&gt;- download a file&lt;/div&gt;&lt;div&gt;- automatically sync files across devices&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;out of scope (design s3 system design question):&lt;/div&gt;&lt;div&gt;- roll own blob storage&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="-36" width="278" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="SIlXdfyfoEO5nfVL8pr4-1" value="&lt;div style=&quot;&quot;&gt;Non-Functional Requirements:&lt;/div&gt;&lt;span style=&quot;&quot;&gt;- highly availably system (guarantees 99.9 availability), eventual consistency is fine&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;(CAP theory, availability &amp;gt;&amp;gt; consistency)&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;- low latency uploads and downloads (as low as possible)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;- support large files (up to 50GB)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- resumable uploads&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- high data integrity (sync accuracy)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="175" width="461" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhY5ZJO2jo3Etm7knv-1" value="Scale:&lt;div&gt;- 100M DAU&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="103" width="84" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="6OWQNImDuv8s8JGWCn0P-2" value="- File (raw bytes)&lt;div&gt;- File Metadata&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;name, id, size, etc&lt;br&gt;&lt;/div&gt;&lt;div&gt;- User&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="349" width="141" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6OWQNImDuv8s8JGWCn0P-3" value="3. API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="439" width="50" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6OWQNImDuv8s8JGWCn0P-4" value="&lt;div&gt;upload a file:&lt;/div&gt;POST /files -&amp;gt; 201&lt;div&gt;requestBody:&amp;nbsp;&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;File file,&lt;/div&gt;&lt;div&gt;FileMetadata fileMetadata&lt;/div&gt;&lt;div&gt;}&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;download a file:&lt;/div&gt;&lt;div&gt;GET /files/{fileId} -&amp;gt; {File &amp;amp; FileMetadata} 200 status code&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;sync:&lt;/div&gt;&lt;div&gt;GET /changes?since={timestamp} -&amp;gt; fileIds[]&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="482" width="324" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="IjiKB-747pUPl7-p9aJl-1" value="userId will be present in the request via the header&lt;div&gt;via either session token or JWT&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-398" y="702" width="287" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="IjiKB-747pUPl7-p9aJl-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="etjfxlxJYTYRdtBJyq4H-3" target="etjfxlxJYTYRdtBJyq4H-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="444" as="sourcePoint" />
+            <mxPoint x="458" y="443.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-1" value="File Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="306.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" parent="1" source="etjfxlxJYTYRdtBJyq4H-3" target="etjfxlxJYTYRdtBJyq4H-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="891.4615384615386" y="-20.923076923076906" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-17" value="download directly from S3 using S3 link&lt;div&gt;- upload directly to S3 with a pre-signed url&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="etjfxlxJYTYRdtBJyq4H-16" vertex="1" connectable="0">
+          <mxGeometry x="0.1321" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="345.5" width="114" height="197" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="etjfxlxJYTYRdtBJyq4H-4" target="etjfxlxJYTYRdtBJyq4H-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-6" value="upload(fileMetadata)&lt;div&gt;getFile(fileId)&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="etjfxlxJYTYRdtBJyq4H-5" vertex="1" connectable="0">
+          <mxGeometry x="0.0329" y="4" relative="1" as="geometry">
+            <mxPoint x="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="etjfxlxJYTYRdtBJyq4H-4" target="etjfxlxJYTYRdtBJyq4H-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-23" value="getChanges()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="etjfxlxJYTYRdtBJyq4H-22" vertex="1" connectable="0">
+          <mxGeometry x="-0.0565" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-4" value="Load Balancer &amp;amp;&amp;nbsp;&lt;div&gt;API Gateway&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- routing&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- authentication&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- rate limiting&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- SSL termination&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="306.5" width="111" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="OvEh-RvhsHhTRr3o7u3M-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" parent="1" source="etjfxlxJYTYRdtBJyq4H-7" target="etjfxlxJYTYRdtBJyq4H-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OvEh-RvhsHhTRr3o7u3M-2" value="S3 notification event" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OvEh-RvhsHhTRr3o7u3M-1" vertex="1" connectable="0">
+          <mxGeometry x="0.1368" y="-13" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-7" value="S3 (blob storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="910" y="153" width="115" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-8" value="Postgres/MySql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="910" y="365" width="115" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="etjfxlxJYTYRdtBJyq4H-1" target="etjfxlxJYTYRdtBJyq4H-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-10" value="&lt;strike&gt;upload file&lt;/strike&gt;&lt;div&gt;&lt;strike&gt;returns: file link&lt;/strike&gt;&lt;/div&gt;&lt;div&gt;request a pre-sign url&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="etjfxlxJYTYRdtBJyq4H-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.1648" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="etjfxlxJYTYRdtBJyq4H-1" target="etjfxlxJYTYRdtBJyq4H-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-13" value="write fileMetadata" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="etjfxlxJYTYRdtBJyq4H-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.1331" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-14" value="file_metadata&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- name: text,&lt;/div&gt;&lt;div&gt;- type: enum,&lt;/div&gt;&lt;div&gt;- size: number (in bytes),&lt;/div&gt;&lt;div&gt;- owner_id FK: uuid,&lt;/div&gt;&lt;div&gt;- s3_link,&lt;/div&gt;&lt;div&gt;- creation_date: timestamp,&lt;/div&gt;&lt;div&gt;- last_update_date: timestamp,&lt;/div&gt;&lt;div&gt;- status: started | uploaded&lt;/div&gt;&lt;div&gt;- ...metadata&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1042" y="326" width="183" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-15" value="Storing the raw bytes of the files&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;S3: multi-part upload&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1021" y="128" width="189" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-18" value="Local Folder" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;" parent="1" vertex="1">
+          <mxGeometry x="255" y="499" width="82.5" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-19" value="Client App&lt;div&gt;responsible for syncing local folder and S3&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="248" y="352" width="98" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-20" value="1. Remote Changed&lt;div&gt;- pull for changes&lt;/div&gt;&lt;div&gt;- download the new file and replace&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Local Changed&lt;/div&gt;&lt;div&gt;- upload the changed file to Remote&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;use OS APIs to detect any changes:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Windows API:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;- &lt;/span&gt;&lt;span style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;FileSystemWatcher&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Mac OS API:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;&lt;b&gt;- FSEvents&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="2" y="352" width="210" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-21" value="Sync Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="728" y="472" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="etjfxlxJYTYRdtBJyq4H-24" value="Local DB" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="256.5" y="453" width="81" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="XV3mMw1V0_ARTCzaIgFa-1" value="Upload large files: 50 GB issues:&lt;div&gt;1. uploading to the file service, then to S3 storage is redundant, it&#39;s a loss of bandwidth&lt;/div&gt;&lt;div&gt;2. we cannot upload through api gateway using http - there&#39;s a limit of 10MB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;50GB @ 100mbps = 1h 12m&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;steps:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Chunk files on a client to 5MB chunks&lt;/div&gt;&lt;div&gt;for 50GB = 50000MB / 5 MB = 10000 chunks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;2. Fingerprint&lt;/b&gt; each chunk: hash(bytes)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="212" y="627" width="478" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="80WttukKXqSlOcVC4WzP-1" value="chunk&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- file_metadata_id FK: uuid,&lt;/div&gt;&lt;div&gt;- status: enum,&lt;/div&gt;&lt;div&gt;- s3_link&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1225" y="312" width="165" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="tp2BqbJwHo-3h123wJ1V-1" value="Deep Dives:&lt;div&gt;1.Upload directly to S3 blob storage with pre-signed urls (request pre-signed urls through File Service)&lt;/div&gt;&lt;div&gt;2. How do we update the chunk status?&amp;nbsp;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #1 - insecure: upload a chunk, receive a response that chunk is uploaded, and then relying on a client make an additional&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;request to the client with the chunk_id, status: uploaded to update the file_metadata. The issue with this approach that we&#39;re directly relying/trusting&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;our client, and the client could lie to us (a malicious user could send a wrong status which will create an inconsistency between s3 status/chunk status)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #2 - use a pattern &quot;Trust but Verify&quot;: before updating file_metadata, we need to make an additional request to S3 storage to verify that the chunk&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;is uploaded.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #3 - use S3 notifications. S3 notification event will be triggered once a chunk is uploaded and update the status directly in file_metadata&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="784" y="561" width="869" height="142" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="yTHowqVnXAIj-98l2Kkx" name="local delivery">
+    <mxGraphModel dx="1929" dy="714" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uZaY9qesb8EvW5n6evjB-2" value="&amp;gt; Gopuff delivers goods typically found in a convenience store via rapid delivery and 500+ micro-fulfillment centers." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-212" y="191" width="628" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-3" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-212" y="237" width="106" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-4" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Functional Requirements:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;1.&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Customers should be able to query availability of items, deliverable in 1 hour,&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;by location (i.e. the effective availability is the union of all inventory nearby DCs (distribution center)).&lt;/span&gt;&lt;div style=&quot;&quot;&gt;2. Customers should be able to order multiple items at the same time.&lt;br&gt;&lt;br&gt;&lt;div&gt;Below the line (out of scope):&lt;/div&gt;&lt;div&gt;1. Handling payments/purchases.&lt;/div&gt;&lt;div&gt;2. Handling driver routing and deliveries.&lt;/div&gt;&lt;div&gt;3. Search functionality and catalog APIs. (The system is strictly concerned with availability and ordering).&lt;/div&gt;&lt;div&gt;4. Cancellations and returns.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Non-Functional Requirements:&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Availability requests should fast (&amp;lt;100ms) to support use-cases like search.&lt;/div&gt;&lt;div&gt;2. Ordering should be strongly consistent: two customers should not be able to purchase the same physical product.&lt;/div&gt;&lt;div&gt;3. System should be able to support 10k DCs and 100k items in the catalog across DCs.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. Order volume will be 10M orders/day&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Below the line (out of scope):&lt;/div&gt;&lt;div&gt;1. Privacy and security.&lt;/div&gt;&lt;div&gt;2. Disaster recovery.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-212" y="283" width="634" height="329" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-5" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-209" y="645" width="100" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-6" value="&lt;div&gt;user {...}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;item{&amp;nbsp;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;inventory { - Inventory entity is a physical item at a specific location.&lt;/div&gt;&lt;div&gt;id: uuid PK&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;distribution_center {&lt;br&gt;id: uuid PK,&lt;/div&gt;&lt;div&gt;name: text,&lt;/div&gt;&lt;div&gt;location: longitude/latitute&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;order&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;id: uuid PK,&lt;/div&gt;&lt;div&gt;created_at: timestamp&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;order_item&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;id: uuid PK,&lt;/div&gt;&lt;div&gt;order_id: uuid FK&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-209" y="697" width="376" height="358" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-7" value="&lt;div&gt;&lt;b&gt;Inventory&lt;/b&gt;: A physical instance of an item, located at a DC.&amp;nbsp;&lt;/div&gt;&lt;div&gt;We&#39;ll sum up Inventory to determine the quantity available to a specific user for a specific Item.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Item&lt;/b&gt;: A type of item, e.g. Cheetos. These are what our customers will actually care about.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;DistributionCenter&lt;/b&gt;: A physical location where items are stored.&amp;nbsp;&lt;/div&gt;&lt;div&gt;We&#39;ll use these to determine which items are available to a user. Inventory are stored in DCs.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Order&lt;/b&gt;: A collection of Inventory which have been ordered by a user (and shipping/billing information).&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-786" y="697" width="554" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-8" value="3. API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-209" y="1083" width="50" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-9" value="1. GET /v1/items?lat={LAT}&amp;amp;long={LONG}&amp;amp;keyword={}&amp;amp;page_size={}&amp;amp;page_num={}&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;responseBody:&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&quot;items&quot;: [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;id&quot;: uuid,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: text,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;quantity: int&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;}&lt;/div&gt;&lt;div&gt;]&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. POST /v1/order&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;requestBody:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;latitude&quot;: lat,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;longitude&quot;: long&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&quot;items&quot;: [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&quot;id&quot;: uuid,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: text,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&quot;quantity: int&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;}&lt;/div&gt;&lt;div&gt;]&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-212" y="1131" width="468" height="386" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-10" value="4. High-Level Design" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="503" y="606" width="129" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-14" target="uZaY9qesb8EvW5n6evjB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-14" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="507.5" y="765" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-15" target="uZaY9qesb8EvW5n6evjB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-4" value="GET" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uZaY9qesb8EvW5n6evjB-18">
+          <mxGeometry x="-0.0752" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-15" target="I0LP1a1x3WWxmOki-7UH-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-15" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="703" y="655.5" width="75" height="279" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-17" target="uZaY9qesb8EvW5n6evjB-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-17" value="Availability Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="887" y="765" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-19" value="PostgresDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1144" y="723.5" width="197" height="143" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;distribution_center {&lt;br&gt;id: uuid PK,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;name: text,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;location: longitude/latitute&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1177" y="883" width="153" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-17" target="uZaY9qesb8EvW5n6evjB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-28" value="join of dc+item" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uZaY9qesb8EvW5n6evjB-22">
+          <mxGeometry x="-0.1893" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-23" target="uZaY9qesb8EvW5n6evjB-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-27" value="finds all available dc within 1 hour" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uZaY9qesb8EvW5n6evjB-26">
+          <mxGeometry x="-0.5591" y="-2" relative="1" as="geometry">
+            <mxPoint x="56" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-23" target="I0LP1a1x3WWxmOki-7UH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-23" value="Nearby Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="887" y="895" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-25" value="DC Table" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1151.5" y="808" width="50.5" height="50.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-30" value="item{ &#xa;id,&#xa;name,&#xa;description&#xa;}&#xa;&#xa;&#xa;inventory { - Inventory entity is a physical item at a specific location.&#xa;id: uuid PK&#xa;item_id,&#xa;dc_id,&#xa;quantity&#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1419.9951851851847" y="594.0029629629628" width="386" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="uZaY9qesb8EvW5n6evjB-31" value="&lt;div&gt;GET call:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;When a user makes a request to get availability for items A, B, and C from latitude X and longitude Y, here&#39;s what happens:&lt;/div&gt;&lt;div&gt;1. We make a request to the Availability Service with the user&#39;s location X and Y and any relevant filters.&lt;/div&gt;&lt;div&gt;2. The availability service fires a request to the Nearby Service with the user&#39;s location X and Y.&lt;/div&gt;&lt;div&gt;3. The nearby service returns us a list of DCs that can deliver to our location.&lt;/div&gt;&lt;div&gt;4. With the DCs available, the availability service query our database with those DC IDs.&lt;/div&gt;&lt;div&gt;5. We sum up the results and return them to our client.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST call:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;For an order, the process looks like this:&lt;/div&gt;&lt;div&gt;1. The user makes a request to the Orders Service to place an order for items A, B, and C.&lt;/div&gt;&lt;div&gt;2. The Orders Service makes creates a singular transaction which we submit to our Postgres leader.&amp;nbsp;&lt;/div&gt;&lt;div&gt;This transaction:&amp;nbsp;&lt;/div&gt;&lt;div&gt;- a. Checks the inventory for items A, B, and C &amp;gt; 0.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- b. If any of the items are out of stock, the transaction fails.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- c. If all items are in stock, the transaction records the order and updates the status for inventory items A, B, and C to &quot;ordered&quot;.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- d. A new row is created in the Orders table (and OrderItems table) recording the order for A, B, and C.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- e. The transaction is committed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. If the transaction succeeds, we return the order to the user.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="503" y="241" width="700" height="329" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I0LP1a1x3WWxmOki-7UH-1" target="uZaY9qesb8EvW5n6evjB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-6" value="write transaction" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="I0LP1a1x3WWxmOki-7UH-5">
+          <mxGeometry x="-0.6109" y="-2" relative="1" as="geometry">
+            <mxPoint x="30" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-1" value="Order Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="657" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-3" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="809" y="691" width="51" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-7" value="1. Make availability lookups incorporate traffic and drive time&lt;br&gt;Solution:&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="496" y="1041" width="339" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-8" value="5. Deep Dives" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="503" y="996" width="93" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="I0LP1a1x3WWxmOki-7UH-10" value="Travel Time Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="967" width="80" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -936,145 +1196,6 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="K2iyZU-mgYxE8OzBVc8b" name="dropbox">
-    <mxGraphModel dx="2658" dy="1827" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="KVpP0q9FYTWia2P56D5a-1" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="-67" width="106" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="y2MaV5HW_tRgavGTKklM-1" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="310" width="100" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="y2MaV5HW_tRgavGTKklM-2" value="Dropbox - a cloud-based file storage service that allows users to store and share files.&amp;nbsp;&lt;div&gt;It provides a secure and reliable way to store and access files from anywhere, on any device.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="-213" width="512" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="y2MaV5HW_tRgavGTKklM-3" value="&lt;div&gt;Functional Requirements:&lt;/div&gt;- upload a file&lt;div&gt;- download a file&lt;/div&gt;&lt;div&gt;- automatically sync files across devices&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;out of scope (design s3 system design question):&lt;/div&gt;&lt;div&gt;- roll own blob storage&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="-36" width="278" height="113" as="geometry" />
-        </mxCell>
-        <mxCell id="SIlXdfyfoEO5nfVL8pr4-1" value="&lt;div style=&quot;&quot;&gt;Non-Functional Requirements:&lt;/div&gt;&lt;span style=&quot;&quot;&gt;- highly availably system (guarantees 99.9 availability), eventual consistency is fine&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;(CAP theory, availability &amp;gt;&amp;gt; consistency)&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;- low latency uploads and downloads (as low as possible)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;- support large files (up to 50GB)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- resumable uploads&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- high data integrity (sync accuracy)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="175" width="461" height="113" as="geometry" />
-        </mxCell>
-        <mxCell id="TfKhY5ZJO2jo3Etm7knv-1" value="Scale:&lt;div&gt;- 100M DAU&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="103" width="84" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="6OWQNImDuv8s8JGWCn0P-2" value="- File (raw bytes)&lt;div&gt;- File Metadata&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;name, id, size, etc&lt;br&gt;&lt;/div&gt;&lt;div&gt;- User&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="349" width="141" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="6OWQNImDuv8s8JGWCn0P-3" value="3. API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="439" width="50" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="6OWQNImDuv8s8JGWCn0P-4" value="&lt;div&gt;upload a file:&lt;/div&gt;POST /files -&amp;gt; 201&lt;div&gt;requestBody:&amp;nbsp;&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;File file,&lt;/div&gt;&lt;div&gt;FileMetadata fileMetadata&lt;/div&gt;&lt;div&gt;}&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;download a file:&lt;/div&gt;&lt;div&gt;GET /files/{fileId} -&amp;gt; {File &amp;amp; FileMetadata} 200 status code&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;sync:&lt;/div&gt;&lt;div&gt;GET /changes?since={timestamp} -&amp;gt; fileIds[]&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="482" width="324" height="199" as="geometry" />
-        </mxCell>
-        <mxCell id="IjiKB-747pUPl7-p9aJl-1" value="userId will be present in the request via the header&lt;div&gt;via either session token or JWT&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-398" y="702" width="287" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="IjiKB-747pUPl7-p9aJl-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-3" target="etjfxlxJYTYRdtBJyq4H-4">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="444" as="sourcePoint" />
-            <mxPoint x="458" y="443.9999999999998" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-1" value="File Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="306.5" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-3" target="etjfxlxJYTYRdtBJyq4H-7">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="891.4615384615386" y="-20.923076923076906" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-17" value="download directly from S3 using S3 link&lt;div&gt;- upload directly to S3 with a pre-signed url&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-16">
-          <mxGeometry x="0.1321" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="345.5" width="114" height="197" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-4" target="etjfxlxJYTYRdtBJyq4H-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-6" value="upload(fileMetadata)&lt;div&gt;getFile(fileId)&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-5">
-          <mxGeometry x="0.0329" y="4" relative="1" as="geometry">
-            <mxPoint x="-40" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-4" target="etjfxlxJYTYRdtBJyq4H-21">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-23" value="getChanges()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-22">
-          <mxGeometry x="-0.0565" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-4" value="Load Balancer &amp;amp;&amp;nbsp;&lt;div&gt;API Gateway&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- routing&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- authentication&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- rate limiting&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- SSL termination&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="306.5" width="111" height="275" as="geometry" />
-        </mxCell>
-        <mxCell id="OvEh-RvhsHhTRr3o7u3M-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-7" target="etjfxlxJYTYRdtBJyq4H-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OvEh-RvhsHhTRr3o7u3M-2" value="S3 notification event" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OvEh-RvhsHhTRr3o7u3M-1">
-          <mxGeometry x="0.1368" y="-13" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-7" value="S3 (blob storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="910" y="153" width="115" height="109" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-8" value="Postgres/MySql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="910" y="365" width="115" height="109" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-1" target="etjfxlxJYTYRdtBJyq4H-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-10" value="&lt;strike&gt;upload file&lt;/strike&gt;&lt;div&gt;&lt;strike&gt;returns: file link&lt;/strike&gt;&lt;/div&gt;&lt;div&gt;request a pre-sign url&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-9">
-          <mxGeometry x="-0.1648" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="etjfxlxJYTYRdtBJyq4H-1" target="etjfxlxJYTYRdtBJyq4H-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-13" value="write fileMetadata" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etjfxlxJYTYRdtBJyq4H-11">
-          <mxGeometry x="-0.1331" y="-3" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-14" value="file_metadata&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- name: text,&lt;/div&gt;&lt;div&gt;- type: enum,&lt;/div&gt;&lt;div&gt;- size: number (in bytes),&lt;/div&gt;&lt;div&gt;- owner_id FK: uuid,&lt;/div&gt;&lt;div&gt;- s3_link,&lt;/div&gt;&lt;div&gt;- creation_date: timestamp,&lt;/div&gt;&lt;div&gt;- last_update_date: timestamp,&lt;/div&gt;&lt;div&gt;- status: started | uploaded&lt;/div&gt;&lt;div&gt;- ...metadata&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1042" y="326" width="183" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-15" value="Storing the raw bytes of the files&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;S3: multi-part upload&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1021" y="128" width="189" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-18" value="Local Folder" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;" vertex="1" parent="1">
-          <mxGeometry x="255" y="499" width="82.5" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-19" value="Client App&lt;div&gt;responsible for syncing local folder and S3&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="248" y="352" width="98" height="96" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-20" value="1. Remote Changed&lt;div&gt;- pull for changes&lt;/div&gt;&lt;div&gt;- download the new file and replace&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Local Changed&lt;/div&gt;&lt;div&gt;- upload the changed file to Remote&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;use OS APIs to detect any changes:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Windows API:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;- &lt;/span&gt;&lt;span style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;FileSystemWatcher&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Mac OS API:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;&lt;b&gt;- FSEvents&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2" y="352" width="210" height="199" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-21" value="Sync Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="728" y="472" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="etjfxlxJYTYRdtBJyq4H-24" value="Local DB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="256.5" y="453" width="81" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="XV3mMw1V0_ARTCzaIgFa-1" value="Upload large files: 50 GB issues:&lt;div&gt;1. uploading to the file service, then to S3 storage is redundant, it&#39;s a loss of bandwidth&lt;/div&gt;&lt;div&gt;2. we cannot upload through api gateway using http - there&#39;s a limit of 10MB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;50GB @ 100mbps = 1h 12m&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;steps:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Chunk files on a client to 5MB chunks&lt;/div&gt;&lt;div&gt;for 50GB = 50000MB / 5 MB = 10000 chunks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;2. Fingerprint&lt;/b&gt; each chunk: hash(bytes)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="212" y="627" width="478" height="185" as="geometry" />
-        </mxCell>
-        <mxCell id="80WttukKXqSlOcVC4WzP-1" value="chunk&lt;div&gt;- id unique PK: uuid,&lt;/div&gt;&lt;div&gt;- file_metadata_id FK: uuid,&lt;/div&gt;&lt;div&gt;- status: enum,&lt;/div&gt;&lt;div&gt;- s3_link&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1225" y="312" width="165" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="tp2BqbJwHo-3h123wJ1V-1" value="Deep Dives:&lt;div&gt;1.Upload directly to S3 blob storage with pre-signed urls (request pre-signed urls through File Service)&lt;/div&gt;&lt;div&gt;2. How do we update the chunk status?&amp;nbsp;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #1 - insecure: upload a chunk, receive a response that chunk is uploaded, and then relying on a client make an additional&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;request to the client with the chunk_id, status: uploaded to update the file_metadata. The issue with this approach that we&#39;re directly relying/trusting&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;our client, and the client could lie to us (a malicious user could send a wrong status which will create an inconsistency between s3 status/chunk status)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #2 - use a pattern &quot;Trust but Verify&quot;: before updating file_metadata, we need to make an additional request to S3 storage to verify that the chunk&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;is uploaded.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- approach #3 - use S3 notifications. S3 notification event will be triggered once a chunk is uploaded and update the status directly in file_metadata&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="784" y="561" width="869" height="142" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
   <diagram id="el7KaRuGNUAxwscP_oVZ" name="distributed cache">
     <mxGraphModel dx="3394" dy="1028" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1230,127 +1351,6 @@
         </mxCell>
         <mxCell id="Q7qzO_BLJ7WN3gepMy-6-48" value="propagate changes to other nodes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-1930.5" y="1485" width="201" height="26" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="yTHowqVnXAIj-98l2Kkx" name="local delivery">
-    <mxGraphModel dx="1929" dy="714" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="uZaY9qesb8EvW5n6evjB-2" value="&amp;gt; Gopuff delivers goods typically found in a convenience store via rapid delivery and 500+ micro-fulfillment centers." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-212" y="191" width="628" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-3" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-212" y="237" width="106" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-4" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Functional Requirements:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;1.&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Customers should be able to query availability of items, deliverable in 1 hour,&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;by location (i.e. the effective availability is the union of all inventory nearby DCs (distribution center)).&lt;/span&gt;&lt;div style=&quot;&quot;&gt;2. Customers should be able to order multiple items at the same time.&lt;br&gt;&lt;br&gt;&lt;div&gt;Below the line (out of scope):&lt;/div&gt;&lt;div&gt;1. Handling payments/purchases.&lt;/div&gt;&lt;div&gt;2. Handling driver routing and deliveries.&lt;/div&gt;&lt;div&gt;3. Search functionality and catalog APIs. (The system is strictly concerned with availability and ordering).&lt;/div&gt;&lt;div&gt;4. Cancellations and returns.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Non-Functional Requirements:&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Availability requests should fast (&amp;lt;100ms) to support use-cases like search.&lt;/div&gt;&lt;div&gt;2. Ordering should be strongly consistent: two customers should not be able to purchase the same physical product.&lt;/div&gt;&lt;div&gt;3. System should be able to support 10k DCs and 100k items in the catalog across DCs.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. Order volume will be 10M orders/day&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Below the line (out of scope):&lt;/div&gt;&lt;div&gt;1. Privacy and security.&lt;/div&gt;&lt;div&gt;2. Disaster recovery.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-212" y="283" width="634" height="329" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-5" value="2. Core Entities" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-209" y="645" width="100" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-6" value="&lt;div&gt;user {...}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;item{&amp;nbsp;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;inventory { - Inventory entity is a physical item at a specific location.&lt;/div&gt;&lt;div&gt;id: uuid PK&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;distribution_center {&lt;br&gt;id: uuid PK,&lt;/div&gt;&lt;div&gt;name: text,&lt;/div&gt;&lt;div&gt;location: longitude/latitute&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;order&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;id: uuid PK,&lt;/div&gt;&lt;div&gt;created_at: timestamp&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;order_item&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;id: uuid PK,&lt;/div&gt;&lt;div&gt;order_id: uuid FK&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-209" y="697" width="376" height="358" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-7" value="&lt;div&gt;&lt;b&gt;Inventory&lt;/b&gt;: A physical instance of an item, located at a DC.&amp;nbsp;&lt;/div&gt;&lt;div&gt;We&#39;ll sum up Inventory to determine the quantity available to a specific user for a specific Item.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Item&lt;/b&gt;: A type of item, e.g. Cheetos. These are what our customers will actually care about.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;DistributionCenter&lt;/b&gt;: A physical location where items are stored.&amp;nbsp;&lt;/div&gt;&lt;div&gt;We&#39;ll use these to determine which items are available to a user. Inventory are stored in DCs.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Order&lt;/b&gt;: A collection of Inventory which have been ordered by a user (and shipping/billing information).&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-786" y="697" width="554" height="142" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-8" value="3. API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-209" y="1083" width="50" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-9" value="1. GET /v1/items?lat={LAT}&amp;amp;long={LONG}&amp;amp;keyword={}&amp;amp;page_size={}&amp;amp;page_num={}&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;responseBody:&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&quot;items&quot;: [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;id&quot;: uuid,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: text,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;quantity: int&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;}&lt;/div&gt;&lt;div&gt;]&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. POST /v1/order&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;requestBody:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;latitude&quot;: lat,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;longitude&quot;: long&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&quot;items&quot;: [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&quot;id&quot;: uuid,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: text,&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&quot;quantity: int&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;}&lt;/div&gt;&lt;div&gt;]&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-212" y="1131" width="468" height="386" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-10" value="4. High-Level Design" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="503" y="606" width="129" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-14" target="uZaY9qesb8EvW5n6evjB-15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-14" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="507.5" y="765" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-15" target="uZaY9qesb8EvW5n6evjB-17">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-4" value="GET" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uZaY9qesb8EvW5n6evjB-18">
-          <mxGeometry x="-0.0752" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-15" target="I0LP1a1x3WWxmOki-7UH-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-15" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="703" y="655.5" width="75" height="279" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-17" target="uZaY9qesb8EvW5n6evjB-23">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-17" value="Availability Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="887" y="765" width="80" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-19" value="PostgresDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="1144" y="723.5" width="197" height="143" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;distribution_center {&lt;br&gt;id: uuid PK,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;name: text,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;location: longitude/latitute&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1177" y="883" width="153" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-17" target="uZaY9qesb8EvW5n6evjB-19">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-28" value="join of dc+item" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uZaY9qesb8EvW5n6evjB-22">
-          <mxGeometry x="-0.1893" relative="1" as="geometry">
-            <mxPoint y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-23" target="uZaY9qesb8EvW5n6evjB-25">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-27" value="finds all available dc within 1 hour" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uZaY9qesb8EvW5n6evjB-26">
-          <mxGeometry x="-0.5591" y="-2" relative="1" as="geometry">
-            <mxPoint x="56" y="-3" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="uZaY9qesb8EvW5n6evjB-23" target="I0LP1a1x3WWxmOki-7UH-10">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-23" value="Nearby Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="887" y="895" width="80" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-25" value="DC Table" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1151.5" y="808" width="50.5" height="50.5" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-30" value="item{ &#xa;id,&#xa;name,&#xa;description&#xa;}&#xa;&#xa;&#xa;inventory { - Inventory entity is a physical item at a specific location.&#xa;id: uuid PK&#xa;item_id,&#xa;dc_id,&#xa;quantity&#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1419.9951851851847" y="594.0029629629628" width="386" height="123" as="geometry" />
-        </mxCell>
-        <mxCell id="uZaY9qesb8EvW5n6evjB-31" value="&lt;div&gt;GET call:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;When a user makes a request to get availability for items A, B, and C from latitude X and longitude Y, here&#39;s what happens:&lt;/div&gt;&lt;div&gt;1. We make a request to the Availability Service with the user&#39;s location X and Y and any relevant filters.&lt;/div&gt;&lt;div&gt;2. The availability service fires a request to the Nearby Service with the user&#39;s location X and Y.&lt;/div&gt;&lt;div&gt;3. The nearby service returns us a list of DCs that can deliver to our location.&lt;/div&gt;&lt;div&gt;4. With the DCs available, the availability service query our database with those DC IDs.&lt;/div&gt;&lt;div&gt;5. We sum up the results and return them to our client.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST call:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;For an order, the process looks like this:&lt;/div&gt;&lt;div&gt;1. The user makes a request to the Orders Service to place an order for items A, B, and C.&lt;/div&gt;&lt;div&gt;2. The Orders Service makes creates a singular transaction which we submit to our Postgres leader.&amp;nbsp;&lt;/div&gt;&lt;div&gt;This transaction:&amp;nbsp;&lt;/div&gt;&lt;div&gt;- a. Checks the inventory for items A, B, and C &amp;gt; 0.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- b. If any of the items are out of stock, the transaction fails.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- c. If all items are in stock, the transaction records the order and updates the status for inventory items A, B, and C to &quot;ordered&quot;.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- d. A new row is created in the Orders table (and OrderItems table) recording the order for A, B, and C.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- e. The transaction is committed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. If the transaction succeeds, we return the order to the user.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="503" y="241" width="700" height="329" as="geometry" />
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I0LP1a1x3WWxmOki-7UH-1" target="uZaY9qesb8EvW5n6evjB-19">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-6" value="write transaction" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="I0LP1a1x3WWxmOki-7UH-5">
-          <mxGeometry x="-0.6109" y="-2" relative="1" as="geometry">
-            <mxPoint x="30" y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-1" value="Order Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="890" y="657" width="80" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-3" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="809" y="691" width="51" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-7" value="1. Make availability lookups incorporate traffic and drive time&lt;br&gt;Solution:&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="496" y="1041" width="339" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-8" value="5. Deep Dives" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="503" y="996" width="93" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="I0LP1a1x3WWxmOki-7UH-10" value="Travel Time Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="990" y="967" width="80" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
