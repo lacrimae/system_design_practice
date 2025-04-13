@@ -697,10 +697,19 @@
     </mxGraphModel>
   </diagram>
   <diagram id="izP7gV27t3MR_CmEq1hC" name="parking lot">
-    <mxGraphModel dx="1530" dy="1963" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="710" dy="1083" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Suna51XfoCfiT_pEt4Sz-1" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-392" y="-85" width="40" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Suna51XfoCfiT_pEt4Sz-2" value="1. Requirements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-237" y="-120" width="106" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Suna51XfoCfiT_pEt4Sz-3" value="Functional Requirements:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;div&gt;1. Customer should be able to book/reserve a spot and receive a ticket/receipt&lt;/div&gt;&lt;div&gt;2. Need to be able to pay for a parking spot&lt;/div&gt;&lt;div&gt;3. Should support 3 types of vehicles (compact, regular, large)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;prices will be based on time and different for each vehicle type&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Non-Functional Requirements:&lt;/div&gt;&lt;div&gt;1. Should prioritize high consistency over availability (CAP - CP)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-237" y="-83" width="433" height="156" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
