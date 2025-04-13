@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.2" pages="8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.2" pages="9">
   <diagram id="XteTEbKlLTetxFG-Vj9d" name="tinyurl">
-    <mxGraphModel dx="3380" dy="1672" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3080" dy="1483" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="c8CjNAbtBmhlcYozAXpE-1" value="Load Balancer&lt;div&gt;- Round Robin&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-135" y="-100" width="90" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="c8CjNAbtBmhlcYozAXpE-2" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Functional Requirements:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- create a short url from a long url&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* optionally support customer alias&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* optionally support an expiration time&lt;/div&gt;&lt;div&gt;- be redirected to the original url from the short url&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+        <mxCell id="c8CjNAbtBmhlcYozAXpE-2" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Functional Requirements:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- create a short url from a long url&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* optionally support customer alias&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;* optionally support an expiration time&lt;/div&gt;&lt;div&gt;- be redirected to the original url from the short url&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="-805" y="-418" width="290" height="90" as="geometry" />
         </mxCell>
         <mxCell id="c8CjNAbtBmhlcYozAXpE-3" value="Bit.ly is a URL shortening service that converts long URLs into shorter, manageable links. It also provides analytics for the shortened URLs.&#xa;i.e. www.longurl.com/long/is/annoying -&gt; www.bit.ly/GHJ23&#xa;Short url redirect to the original url." style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-805" y="-500" width="760" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="c8CjNAbtBmhlcYozAXpE-4" value="Non-functional Requirements:&lt;div&gt;- low latency on redirects (~200ms): indexing, cache&lt;/div&gt;&lt;div&gt;- scale to support 100M DAU and 1B urls&lt;/div&gt;&lt;div&gt;- ensure uniqueness of short codes&lt;/div&gt;&lt;div&gt;- high availability over consistency, eventual consistency for url shortening&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
+        <mxCell id="c8CjNAbtBmhlcYozAXpE-4" value="Non-functional Requirements:&lt;div&gt;- low latency on redirects (~200ms): indexing, cache&lt;/div&gt;&lt;div&gt;- scale to support 100M DAU and 1B urls&lt;/div&gt;&lt;div&gt;- ensure uniqueness of short codes&lt;/div&gt;&lt;div&gt;- high availability over consistency, eventual consistency for url shortening&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="-805" y="-308" width="420" height="90" as="geometry" />
         </mxCell>
         <mxCell id="c8CjNAbtBmhlcYozAXpE-5" value="Back of the Envelope Estimations - BOTE:&lt;div&gt;- scale&lt;/div&gt;&lt;div&gt;- latency&lt;/div&gt;&lt;div&gt;- storage&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
@@ -576,7 +576,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yTHowqVnXAIj-98l2Kkx" name="local delivery">
-    <mxGraphModel dx="1929" dy="714" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2456" dy="1047" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -662,7 +662,7 @@
           <mxGeometry x="887" y="895" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-25" value="DC Table" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1151.5" y="808" width="50.5" height="50.5" as="geometry" />
+          <mxGeometry x="1152.5" y="799" width="50.5" height="50.5" as="geometry" />
         </mxCell>
         <mxCell id="uZaY9qesb8EvW5n6evjB-30" value="item{ &#xa;id,&#xa;name,&#xa;description&#xa;}&#xa;&#xa;&#xa;inventory { - Inventory entity is a physical item at a specific location.&#xa;id: uuid PK&#xa;item_id,&#xa;dc_id,&#xa;quantity&#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="1419.9951851851847" y="594.0029629629628" width="386" height="123" as="geometry" />
@@ -693,6 +693,22 @@
         <mxCell id="I0LP1a1x3WWxmOki-7UH-10" value="Travel Time Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="990" y="967" width="80" height="60" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="izP7gV27t3MR_CmEq1hC" name="parking lot">
+    <mxGraphModel dx="1530" dy="1963" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Aq4pr2GoiswVZWa403or" name="whatsapp">
+    <mxGraphModel dx="1242" dy="785" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
@@ -1352,14 +1368,6 @@
         <mxCell id="Q7qzO_BLJ7WN3gepMy-6-48" value="propagate changes to other nodes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-1930.5" y="1485" width="201" height="26" as="geometry" />
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="Aq4pr2GoiswVZWa403or" name="whatsapp">
-    <mxGraphModel dx="1242" dy="785" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
